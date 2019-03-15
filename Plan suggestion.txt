@@ -1,0 +1,85 @@
+
+some Design Decesions:
+    1.will use lcd (bouns) instead of 7-segment display .
+    2.will implement driver functions and enums (bouns).
+    3.project has 2 modoules 
+        A-LCD 
+        B-GPIO
+    4.project has two phase 
+        I. implement Modules functions. 
+        II.implement main function .
+work Distributions decisions :  
+    1.every individual will have contributions in all Bouns fields (driver,lcd) .
+learning resources:
+    I.  for registers of GPIO see videos (3,6,7,9,10,11,12) every video is 5 minutes (تقريبا) https://www.youtube.com/playlist?list=PLR9Db0Xmncr2DJfKxzA76ih8vJsy2tE52&fbclid=IwAR1TuoaZYkVXjoP5LLytxEl4rJ_HLojzfoEuNff-dsIri7D4c3S_UuwtNtc
+    II. for LCD Interfacing see videos (from 25 untill 32) Or read pages(from 33 to 44) in https://github.com/AhmedAliAhmedMostafa/Project_1_Counter_G20/blob/master/references/%5BMuhammad_Ali__et_al.%5D_TI_ARM_Peripherals_Programm(BookZZ.org).pdf 
+    III. for enums (تعلمها مش هياخد  5 دقائق بأذن الله) https://www.geeksforgeeks.org/enumeration-enum-c/
+      
+لو حد عايز ميشتغلش في كله عادي هياخد 10 درجات برضه انشاء الله بس مش هياخد بونص بتاع الحاجة اللي مشتركش فيها
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Phase I:
+    Module functions:
+
+        I.module-A (lcd) functions :
+            A.1 void command (unsigned char cmd)
+            description: produce appropiate control signals   and put command value on the data lines of lcd and then call back(wait_flag) at the end
+            A.2 void data (unsigned char data)
+            description: produce appropiate control signals and put data on lcd data lines .
+            A.3 void control_signal(unsigned char register,unsigned char read/write)
+                description:produce enable and register select  and  read/write  signal.
+            A.4 void delay ( unsigned short int n )
+                description:delay n micro seconds .
+            A.5 void wait_flag (void)
+            description:change direction of  bit A[7] and read busy flag of the lcd and  wait until lcd controller finishes executing .
+        II.module-B () to know description of each function refer to https://drive.google.com/drive/folders/1bikpNLWgtaLMDOoPzyru16wA1Vor0Lm8 :
+            B.1 Port_Init
+            B.2 Port_SetPinDirection
+            B.3 Port_SetPinPullUp
+            B.4 Port_SetPinPullDown
+            B.5 DIO_ReadPort
+            B.6 DIO_WritePort
+            B.7 DIO_FlipPort
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    Tasks Distribution:
+
+    Batman: /*Put your name here if you wan to be this superhero*/
+        1.implement A.5
+        2.build GPIO header file with all module B functions proto types .
+        3.implement B.1
+
+    superman:/*Put your name here if you wan to be this superhero*/
+        1.implement A.4
+        2.implement B.2
+        3.implement B.6
+
+    \spiderman:/*Put your name here if you wan to be this superhero*/
+        1.implement A.3
+        2.implement B.3
+        3.implement B.5
+
+    Thor:/*Put your name here if you wan to be this superhero*/
+        1.implement A.2
+        2.implement B.4
+        3.create Port_PinDirectionType enum  for specifications at https://drive.google.com/drive/folders/1bikpNLWgtaLMDOoPzyru16wA1Vor0Lm8
+
+    Flash: /*Put your name here if you wan to be this superhero*/
+        1.implement A.1
+        2.implement B.7
+        3.create (Dio_LevelType )enum specifications at https://drive.google.com/drive/folders/1bikpNLWgtaLMDOoPzyru16wA1Vor0Lm8
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+phase II:
+    /* put phase 2 plan here */
+
+    
+        
+
+     
