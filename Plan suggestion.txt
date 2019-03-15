@@ -47,7 +47,7 @@ Phase I:
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     Tasks Distribution:
 
-    Batman: /*Put your name here if you wan to be this superhero*/
+    Batman: Mostafa Mohsen
         1.implement A.5
         2.build GPIO header file with all module B functions proto types .
         3.implement B.1
