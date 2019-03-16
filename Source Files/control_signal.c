@@ -1,6 +1,6 @@
 //A[6]->RW
 //A[5]->RS
-#define GPIO_PORTA_DATA_R
+#define GPIO_PORTA_DATA_R       (*((volatile unsigned long *)0x400043FC))
 #define PORTA_RS 0x20
 #define PORTA_RW 0x40
 
