@@ -1,7 +1,6 @@
 
 #include "stdint.h"
-/* pre-condition:: an array of Pull-down registers for ALL ports && enum for ports*/
-/********************************************************************/
+
 
 #define GPIO_PORTA_PDR_R        (*((volatile uint32_t *)0x40004514))
 #define GPIO_PORTB_PDR_R        (*((volatile uint32_t *)0x40005514))
