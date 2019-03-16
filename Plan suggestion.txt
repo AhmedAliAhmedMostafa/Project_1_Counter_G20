@@ -54,7 +54,7 @@ Phase I:
 
     superman:/*Put your name here if you wan to be this superhero*/
         1.implement A.4
-        2.implement B.2
+      /*2.implement B.2*/       <========== I (Mostafa)already made this function
         3.implement B.6
 
     \spiderman:/*Put your name here if you wan to be this superhero*/
