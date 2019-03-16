@@ -5,7 +5,7 @@
 //char  t ;
 void PortInit (uint8_t portIndex) // assume port [A:F] as [0:5]
 	{
-		if		 (portIndex==0){GPIOA->LOCK=0x4C4F434B;SYSCTL->RCGCGPIO|=0X01;GPIOA->DATA|=0X3FC;GPIOA->DEN=0XFF;return;}
+		if     (portIndex==0){GPIOA->LOCK=0x4C4F434B;SYSCTL->RCGCGPIO|=0X01;GPIOA->DATA|=0X3FC;GPIOA->DEN=0XFF;return;}
 		else if(portIndex==1){GPIOB->LOCK=0x4C4F434B;SYSCTL->RCGCGPIO|=0X02;GPIOB->DATA|=0X3FC;GPIOB->DEN=0XFF;return;}
 		else if(portIndex==2){GPIOC->LOCK=0x4C4F434B;SYSCTL->RCGCGPIO|=0X04;GPIOC->DATA|=0X3FC;GPIOC->DEN=0XFF;return;}
 		else if(portIndex==3){GPIOD->LOCK=0x4C4F434B;SYSCTL->RCGCGPIO|=0X08;GPIOD->DATA|=0X3FC;GPIOD->DEN=0XFF;return;}
@@ -13,6 +13,7 @@ void PortInit (uint8_t portIndex) // assume port [A:F] as [0:5]
 		else if(portIndex==5){GPIOF->LOCK=0x4C4F434B;SYSCTL->RCGCGPIO|=0X20;GPIOF->DATA|=0X07C;GPIOF->DEN=0XFF;return;}
 		else {return;}
 	}
+// made for testing 
 //	int main(void){
 //		PortInit(0);
 //		PortInit(1);
