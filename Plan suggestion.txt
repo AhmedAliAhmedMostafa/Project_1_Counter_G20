@@ -1,4 +1,8 @@
-
+PIN CONIFGRATIONS:
+B[7:0]--->Data of lcd
+A[7]------>EN
+A[6]------>RW
+A[5]------>RS
 some Design Decesions:
     1.will use lcd (bouns) instead of 7-segment display .
     2.will implement driver functions and enums (bouns).
