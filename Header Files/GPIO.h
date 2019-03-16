@@ -1,2 +1,2 @@
-Void seven_segment_init (void);
-Void Push_button_init (void);
+void seven_segment_init (void);
+void Push_button_init (void);
