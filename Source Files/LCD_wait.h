@@ -1,3 +1,4 @@
+//This is the same as Portdir.c but made for testing as .c files needs main and SystemInit
 #include"TM4C123GH6PM.h"
 typedef  enum  {PORT_PIN_IN,PORT_PIN_OUT}Port_PinDirectionType;
 
