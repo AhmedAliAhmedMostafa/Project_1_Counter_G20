@@ -38,16 +38,16 @@ Phase I:
                 description:produce enable and register select  and  read/write  signal.
             A.4 void delay ( unsigned short int n )
                 description:delay n micro seconds .
-            A.5 void wait_flag (void)             <==================[Done]
+            A.5 void wait_flag (void)             <==================[Done]&[tested]
             description:change direction of  bit A[7] and read busy flag of the lcd and  wait until lcd controller finishes executing .
         II.module-B () to know description of each function refer to https://drive.google.com/drive/folders/1bikpNLWgtaLMDOoPzyru16wA1Vor0Lm8 :
             B.1 Port_Init               <==================[Done]&[tested]
             B.2 Port_SetPinDirection    <==================[Done]&[tested]
             B.3 Port_SetPinPullUp       <==================[Done]
             B.4 Port_SetPinPullDown     <==================[Done]
-            B.5 DIO_ReadPort
-            B.6 DIO_WritePort
-            B.7 DIO_FlipPort
+            B.5 DIO_ReadPort            <==================[Done]
+            B.6 DIO_WritePort           <==================[Done]&[tested]
+            B.7 DIO_FlipPort            <==================[Done]&[tested]
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     Tasks Distribution:
 
@@ -58,8 +58,8 @@ Phase I:
 
     superman:/*Put your name here if you wan to be this superhero*/
         1.implement A.4 ----done-----
-      /*2.implement B.2*/       <========== I (Mostafa)already made this function
-        3.implement B.6
+        2.implement B.2 ----done-----    
+        3.implement B.6 ----done-----
 
     \spiderman:/*Ahmed Ali Ahmed*/
         1.implement A.3 ----done-----
@@ -73,8 +73,8 @@ is made in Portdir.c ===>   3.create Port_PinDirectionType enum  for specificati
 
     Flash: /Abanoub Michael Eissa*/
         1.implement A.1 ----done-----
-        2.implement B.7
-        3.create (Dio_LevelType )enum specifications at https://drive.google.com/drive/folders/1bikpNLWgtaLMDOoPzyru16wA1Vor0Lm8
+        2.implement B.7 ----done-----
+        3.create (Dio_LevelType )enum specifications at https://drive.google.com/drive/folders/1bikpNLWgtaLMDOoPzyru16wA1Vor0Lm8 ----done-----
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
