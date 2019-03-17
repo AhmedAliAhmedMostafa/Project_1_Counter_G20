@@ -1,11 +1,5 @@
 #include"LCD_wait.h"
 #include"portInit_V2.h"
-//#define GPIO_PORTA_DATA_R       (*((volatile unsigned long *)0x400043FC))
-//#define GPIO_PORTB_DATA_R       (*((volatile unsigned long *)0x400053FC))
-//#define GPIO_PORTC_DATA_R       (*((volatile unsigned long *)0x400063FC))
-//#define GPIO_PORTD_DATA_R       (*((volatile unsigned long *)0x400073FC))
-//#define GPIO_PORTE_DATA_R       (*((volatile unsigned long *)0x400243FC))
-//#define GPIO_PORTF_DATA_R       (*((volatile unsigned long *)0x400253FC))
 typedef enum {STD_LOW,STD_HIGH}Dio_LevelType;
 //char t;
 void DIO_WritePort (uint8_t port_index,uint8_t port_mask,Dio_LevelType pins_level)
@@ -32,15 +26,7 @@ void DIO_WritePort (uint8_t port_index,uint8_t port_mask,Dio_LevelType pins_leve
 	}
 
 }
-void DIO_FlipPort(uint8_t port_index,uint8_t port_mask)
-{
-		if     (port_index==0){GPIOA->DATA^=port_mask;}
-		else if(port_index==1){GPIOB->DATA^=port_mask;}
-		else if(port_index==2){GPIOC->DATA^=port_mask;}
-		else if(port_index==3){GPIOD->DATA^=port_mask;}
-		else if(port_index==4){GPIOE->DATA^=port_mask;}
-		else if(port_index==5){GPIOF->DATA^=port_mask;}
-}
+// for testing purposes
 //	int main(void){
 //		
 //		PortInit(0);
