@@ -14,14 +14,14 @@ void Port_SetPinDirection(uint8_t portIndex,uint8_t pins_mask,Port_PinDirectionT
 		else if(portIndex==4){GPIOE->DIR|=pins_mask;}
 		else if(portIndex==5){GPIOF->DIR|=pins_mask;}
 		}
-	else if(!pins_direction)
+	else if(~pins_direction)
 	{
-		if     (portIndex==0){GPIOA->DIR&=!pins_mask;}
-		else if(portIndex==1){GPIOB->DIR&=!pins_mask;}
-		else if(portIndex==2){GPIOC->DIR&=!pins_mask;}
-		else if(portIndex==3){GPIOD->DIR&=!pins_mask;}
-		else if(portIndex==4){GPIOE->DIR&=!pins_mask;}
-		else if(portIndex==5){GPIOF->DIR&=!pins_mask;}			
+		if     (portIndex==0){GPIOA->DIR&=~pins_mask;}
+		else if(portIndex==1){GPIOB->DIR&=~pins_mask;}
+		else if(portIndex==2){GPIOC->DIR&=~pins_mask;}
+		else if(portIndex==3){GPIOD->DIR&=~pins_mask;}
+		else if(portIndex==4){GPIOE->DIR&=~pins_mask;}
+		else if(portIndex==5){GPIOF->DIR&=~pins_mask;}			
 	}
 
 }
@@ -31,6 +31,6 @@ void Port_SetPinDirection(uint8_t portIndex,uint8_t pins_mask,Port_PinDirectionT
 //	Port_SetPinDirection(0,0x033,PORT_PIN_OUT);
 //	Port_SetPinDirection(0,0x033,PORT_PIN_IN);
 //	Port_SetPinDirection(0,0x0F,PORT_PIN_OUT);
-//	for(;;){ t=1;t=!t;}
+//	for(;;){ t=1;t=~t;}
 //}
 //void SystemInit(void){SCB->CPACR |= 0x00F00000;}
