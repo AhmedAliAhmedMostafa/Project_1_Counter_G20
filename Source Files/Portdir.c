@@ -28,9 +28,12 @@ void Port_SetPinDirection(uint8_t portIndex,uint8_t pins_mask,Port_PinDirectionT
 // for testing purpose
 //int main(void)
 //{
-//	Port_SetPinDirection(0,0x033,PORT_PIN_OUT);
-//	Port_SetPinDirection(0,0x033,PORT_PIN_IN);
+//	Port_SetPinDirection(0,0x33,PORT_PIN_OUT);
+//	Port_SetPinDirection(0,0x33,PORT_PIN_IN);
 //	Port_SetPinDirection(0,0x0F,PORT_PIN_OUT);
+//	Port_SetPinDirection(1,0xFF,PORT_PIN_OUT);
+//	Port_SetPinDirection(1,0x33,PORT_PIN_IN);
+//	Port_SetPinDirection(1,0x44,PORT_PIN_IN);
 //	for(;;){ t=1;t=~t;}
 //}
 //void SystemInit(void){SCB->CPACR |= 0x00F00000;}
