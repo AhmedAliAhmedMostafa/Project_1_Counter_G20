@@ -34,13 +34,13 @@ Phase I:
                 description:produce enable and register select  and  read/write  signal.
             A.4 void delay ( unsigned short int n )
                 description:delay n micro seconds .
-            A.5 void wait_flag (void)
+            A.5 void wait_flag (void)             <==================[Done]
             description:change direction of  bit A[7] and read busy flag of the lcd and  wait until lcd controller finishes executing .
         II.module-B () to know description of each function refer to https://drive.google.com/drive/folders/1bikpNLWgtaLMDOoPzyru16wA1Vor0Lm8 :
-            B.1 Port_Init
-            B.2 Port_SetPinDirection
-            B.3 Port_SetPinPullUp
-            B.4 Port_SetPinPullDown
+            B.1 Port_Init               <==================[Done]&[tested]
+            B.2 Port_SetPinDirection    <==================[Done]&[tested]
+            B.3 Port_SetPinPullUp       <==================[Done]
+            B.4 Port_SetPinPullDown     <==================[Done]
             B.5 DIO_ReadPort
             B.6 DIO_WritePort
             B.7 DIO_FlipPort
@@ -48,9 +48,9 @@ Phase I:
     Tasks Distribution:
 
     Batman: Mostafa Mohsen
-        1.implement A.5
+       /*1.implement A.5*/
         2.build GPIO header file with all module B functions proto types .
-        3.implement B.1
+        /*3.implement B.1*/
 
     superman:/*Put your name here if you wan to be this superhero*/
         1.implement A.4
@@ -65,7 +65,7 @@ Phase I:
     Thor:/*Ahmed mohamed ibrahim*/
         1.implement A.2
         2.implement B.4
-        3.create Port_PinDirectionType enum  for specifications at https://drive.google.com/drive/folders/1bikpNLWgtaLMDOoPzyru16wA1Vor0Lm8
+is made in Portdir.c ===>   3.create Port_PinDirectionType enum  for specifications at https://drive.google.com/drive/folders/1bikpNLWgtaLMDOoPzyru16wA1Vor0Lm8
 
     Flash: /Abanoub Michael Eissa*/
         1.implement A.1
