@@ -13,7 +13,7 @@ void waitLcd(void)  // this function will read busy flag in LCD (pin[7]in contro
 	LCD_CTRL->DATA |= EN;     // sends Enable pulse
 	Port_SetPinDirection(1,0x80,PORT_PIN_IN); // bit 7 in portB is now input
 	
-	LCD_CTRL->DATA &= !EN;		// disable Enable 
+	LCD_CTRL->DATA &= ~EN;		// disable Enable 
 	while((GPIOB->DATA&0X80)==1);
 	// BUSY WAIT 
 
