@@ -66,12 +66,12 @@ Phase I:
         2.implement B.3 ----done-----
         3.implement B.5 ----done-----
 
-    Thor:/*Put your name here if you wan to be this superhero*/
+    Thor:/*Ahmed mohamed ibrahim*/
         1.implement A.2
         2.implement B.4
         3.create Port_PinDirectionType enum  for specifications at https://drive.google.com/drive/folders/1bikpNLWgtaLMDOoPzyru16wA1Vor0Lm8
 
-    Flash: /*Put your name here if you wan to be this superhero*/
+    Flash: /Abanoub Michael Eissa*/
         1.implement A.1
         2.implement B.7
         3.create (Dio_LevelType )enum specifications at https://drive.google.com/drive/folders/1bikpNLWgtaLMDOoPzyru16wA1Vor0Lm8
