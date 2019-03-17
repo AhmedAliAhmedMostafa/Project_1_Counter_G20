@@ -27,7 +27,7 @@ Phase I:
 
         I.module-A (lcd) functions :
             A.1 void command (unsigned char cmd)
-            description: produce appropiate control signals   and put command value on the data lines of lcd and then call back(wait_flag) at the end
+            description: produce appropiate control signals   and put command value on the data lines of lcd and then call back(wait_flag) at the end        // Done
             A.2 void data (unsigned char data)
             description: produce appropiate control signals and put data on lcd data lines .
             A.3 void control_signal(unsigned char register,unsigned char read/write)
