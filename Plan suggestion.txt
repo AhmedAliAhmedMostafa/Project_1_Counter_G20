@@ -62,9 +62,9 @@ Phase I:
         3.implement B.6
 
     \spiderman:/*Ahmed Ali Ahmed*/
-        1.implement A.3
-        2.implement B.3
-        3.implement B.5
+        1.implement A.3 ----done-----
+        2.implement B.3 ----done-----
+        3.implement B.5 ----done-----
 
     Thor:/*Put your name here if you wan to be this superhero*/
         1.implement A.2
